@@ -1,0 +1,34 @@
+{
+  "name": "notion-cms",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.0.0",
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^29.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "babel-jest": "^29.0.1",
+    "eslint": "^8.23.0",
+    "jest": "^29.0.1",
+    "lerna": "^5.4.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "eject": "react-scripts eject",
+    "setup": "lerna bootstrap",
+    "clean": "rm -rf node_modules packages/{types,client,react}/{node_modules,build}",
+    "lint": "lerna run lint",
+    "format": "lerna run format",
+    "release": "yarn test && yarn build && lerna publish"
+  },
+  "keywords": [],
+  "description": null,
+  "version": "0.0.2",
+  "dependencies": {}
+}

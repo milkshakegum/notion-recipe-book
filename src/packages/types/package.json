@@ -1,0 +1,26 @@
+{
+  "name": "@notion-cms/types",
+  "version": "0.2.0",
+  "description": "Notion.so CMS typescript types",
+  "author": "Nathan Gaberel <nathan@gnab.fr>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "repository": "git@github.com:n6g7/notion-cms.git",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint lib",
+    "format": "prettier --check 'lib/*.{ts,tsx}'",
+    "test": "jest --passWithNoTests"
+  },
+  "keywords": [
+    "notion.so",
+    "cms",
+    "types"
+  ],
+  "gitHead": "3bf6cb6008b35226681e03ae8797e228ec4a98c9"
+}
